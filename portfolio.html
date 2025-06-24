@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Danda Narendra Reddy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #007bff; /* Blue color */
+            border-radius: 5px;
+            transition: 0.3s;
+            font-weight: bold;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        section {
+            padding: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .photo img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        .project-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.project-details.show {
+    max-height: 1000px;
+    padding: 25px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Danda Narendra Reddy</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">🏠 Home</a></li>
+                <li><a href="#about">👨‍💻 About</a></li>
+                <li><a href="#education">🎓 Education</a></li>
+                <li><a href="#certificates">📜 Certificates</a></li>
+                <li><a href="#projects">💻 Projects</a></li>
+                <li><a href="#contact">📩 Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+ <section id="home" class="hero" style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; text-align: left; gap: 120px; padding: 80px; min-height: 50vh; max-width: 1800px; margin: auto;">
+    <div class="content">
+        <h2 style="font-size: 3em;">Hi, I'm Danda Narendra Reddy</h2> <!-- Increased font size here -->
+        <p style="font-size: 1.5em;">Aspiring Backend Developer | Java Enthusiast</p> <!-- Increased font size here -->
+       <a href="Resume.pdf" download class="btn" style="display: inline-block; padding: 12px 24px; background-color: #FFA500; color: white; text-align: center; text-decoration: none; border-radius: 5px; font-size: 1.2em; transition: background-color 0.3s ease;">
+    Download Resume
+</a>
+        <a href="#contact" class="btn contact" style="display: inline-block; padding: 12px 24px; background-color: #FFA500; color: white; text-align: center; text-decoration: none; border-radius: 5px; font-size: 1.2em; transition: background-color 0.3s ease;">
+    Contact Me
+</a>
+
+    </div>
+    <div class="photo" style="flex-shrink: 0;">
+        <img src="Narendra.JPG" alt="Danda Narendra Reddy">
+    </div>
+</section>
+
+    
+    <section id="about" style="max-width: 1600px; width: 95%; margin: auto;">
+        <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px; color: #333;">About Me</h2>
+        <p>I am Danda Narendra Reddy, a final-year BTech Computer Science student, graduating in April 2025. Passionate about backend development, I specialize in Core Java and have a foundational knowledge of SQL, HTML, and CSS. I have developed projects like a simple banking application and a quiz application, demonstrating my problem-solving and coding skills. Beyond academics, I am a district champion in badminton and enjoy playing chess and watching movies. I am eager to apply my technical expertise and problem-solving abilities to real-world challenges and contribute to innovative software solutions.</p>
+        <p>I am highly motivated to build efficient and scalable backend solutions, with a strong foundation in Core Java. My interest in software development drives me to continuously learn and improve my coding skills. I enjoy working on challenging projects that enhance my problem-solving abilities and deepen my understanding of technology. With a keen eye for detail and a passion for clean, well-structured code, I strive to develop applications that are both functional and user-friendly. I am eager to collaborate with like-minded professionals and contribute to impactful software solutions.</p>
+        
+        <div style="text-align: left;"><p style="font-size: 2em;"><strong>Technical Skills:</strong></p>
+            <ul style="list-style: none; padding: 0; font-size: 1.2em;">
+                <li><strong>Programming Languages:</strong> Core Java</li>
+                <li><strong>Web Development:</strong> HTML, CSS</li>
+                <li><strong>Database:</strong> SQL</li>
+            </ul>
+            <p style="font-size: 2em;"><strong>Achievements:</strong></p>
+            <ul style="list-style: none; padding: 0; font-size: 1.2em;">
+                <li>🥈 Secured 2nd prize in a chess competition among 20 participants.</li>
+                <li>📊 Secured an impressive 78% in the All-India JEE entrance examination.</li>
+            </ul>
+		<p style="font-size: 2em;"><strong>HOBBIES:</strong></p>
+	<ul style="list-style: disc; padding-left: 20px; font-size: 1.2em;">
+    	<li style="font-size: 1.0em;">Playing Chess</li>
+    	<li style="font-size: 1.0em;">Watching Movies</li>
+	</ul>
+        </div>
+    </section>
+
+   <section id="education" 
+         style="max-width: 1600px; width: 95%; margin: auto; padding: 40px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px; color: #333;">
+    Education
+  </h2>
+  
+  <table style="
+        width: 100%; 
+        border-collapse: collapse; 
+        background-color: #fff; 
+        border: 2px solid #000; 
+        border-radius: 8px; 
+        overflow: hidden; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      ">
+    <thead>
+      <tr style="background-color: #9B51E0; color: #000; font-size: 1.1em;">
+        <th style="
+              padding: 12px; 
+              text-align: left; 
+              border-right: 1px solid #000;
+            ">
+          Degree
+        </th>
+        <th style="
+              padding: 12px; 
+              text-align: left; 
+              border-right: 1px solid #000;
+            ">
+          University/Institute
+        </th>
+        <th style="
+              padding: 12px; 
+              text-align: left; 
+              border-right: 1px solid #000;
+            ">
+          Year
+        </th>
+        <th style="padding: 12px; text-align: left;">
+          CGPA
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="font-size: 1em; border-bottom: 1px solid #000;">
+        <td style="padding: 12px;">B. Tech In CSE</td>
+        <td style="padding: 12px;">
+          JNTU Kakinada - Amrita Sai Institute of Science and Technology
+        </td>
+        <td style="padding: 12px;">2025</td>
+        <td style="padding: 12px;">7.99</td>
+      </tr>
+      <tr style="font-size: 1em; border-bottom: 1px solid #000;">
+        <td style="padding: 12px;">Intermediate/+2</td>
+        <td style="padding: 12px;">
+          Andhra Pradesh State Board - Narayana Junior College
+        </td>
+        <td style="padding: 12px;">2021</td>
+        <td style="padding: 12px;">9.16</td>
+      </tr>
+      <tr style="font-size: 1em;">
+        <td style="padding: 12px;">Matriculation</td>
+        <td style="padding: 12px;">
+          Andhra Pradesh State Board - Ravindra Bharathi High School
+        </td>
+        <td style="padding: 12px;">2019</td>
+        <td style="padding: 12px;">9.80</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+    
+    <section id="certificates" style="max-width: 1600px; width: 95%; margin: auto; padding: 40px 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; font-size: 2.5em; color: #333; margin-bottom: 20px;">Certificates</h2>
+    <p style="text-align: center; font-size: 1.2em; color: #555; margin-bottom: 30px;">Showcasing my achievements and learning journey.</p>
+    
+    <div style="background-color: #fff; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="font-size: 1.2em; font-weight: bold; color: #333;">Java Programming Intern - Virtual Internship</div>
+        <div style="margin-top: 10px;">
+            <a href="SAVAS.jpg" target="_blank" style="color: #FFA500; text-decoration: none; font-size: 1em;">View Certificate</a>
+        </div>
+    </div>
+    
+    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <div style="font-size: 1.2em; font-weight: bold; color: #333;">Got the Certificate From HackerRank for the completion of JAVA.</div>
+        <div style="margin-top: 10px;">
+            <a href="Hankerrank.png" target="_blank" style="color: #FFA500; text-decoration: none; font-size: 1em;">View Certificate</a>
+        </div>
+    </div>
+</section>
+    
+  <section id="projects" style="max-width: 1600px; width: 95%; margin: auto; text-align: center;">
+    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Projects</h2>
+
+    <!-- Flight Management System -->
+    <div class="project" style="margin-bottom: 40px;">
+        <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Flight Management System</h3>
+        <img src="Flight.jpg" class="project-image" onclick="toggleDetails('flight-details')" style="width: 300px; margin-top: 10px; cursor: pointer;">
+        
+        <div id="flight-details" style="display: none; background-color: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+            <!-- (Keep your Flight Management System content here as it is) -->
+            <h2 style="text-align: center; color: #2c3e50;">✈️ Flight Management System</h2>
+            <p style="text-align: center; font-size: 16px; color: #555;">A full-stack Java web application that enables users to search flights, book tickets, and manage bookings, with dedicated Admin and User panels.</p>
+            <!-- Your full flight management content continues -->
+            <div style="font-size: 15px; color: #333; line-height: 1.8;">
+        <p><strong>🛠️ Tech Stack:</strong> Java, JSP, Servlets, JDBC, MySQL, HTML, CSS</p>
+        <p><strong>💻 Tools:</strong> Eclipse IDE, Apache Tomcat, MySQL Workbench</p>
+        <p><strong>📐 Architecture:</strong> MVC (Model-View-Controller)</p>
+    </div>
+
+    <h3 style="color: #34495e;">👤 User Panel:</h3>
+    <div style="margin-left: 20px; line-height: 1.8;">
+        <p>User Registration & Login with session-based authentication</p>
+        <p>Search flights by flight number, airline, departure/arrival, date & time</p>
+        <p>Book flights with personal and travel details</p>
+        <p>View booking history with all related information</p>
+    </div>
+
+    <h3 style="color: #34495e;">🛫 Admin Panel:</h3>
+    <div style="margin-left: 20px; line-height: 1.8;">
+        <p>Admin Login for secure access</p>
+        <p>Manage Flights: Add, update, or delete flight entries</p>
+        <p>View and manage all user bookings</p>
+    </div>
+
+    <h3 style="color: #34495e;">🗄️ Database Design:</h3>
+    <div style="margin-left: 20px; line-height: 1.8;">
+        <p><code>flights</code>: flight_no, airline, departure, arrival, time, price</p>
+        <p><code>bookings</code>: flight_no, user info, travel date, persons</p>
+        <p><code>users</code>: user credentials</p>
+        <p><code>admin</code>: admin credentials</p>
+    </div>
+
+    <h3 style="color: #34495e;">✨ Key Highlights:</h3>
+    <div style="margin-left: 20px; line-height: 1.8;">
+        <p>Implemented using Core Java, JSP, and Servlets</p>
+        <p>Follows MVC architecture for clean separation of concerns</p>
+        <p>Used JDBC for MySQL database interaction</p>
+        <p>Responsive front-end forms with HTML and CSS</p>
+        <p>Includes session handling, exception management, and input validation</p>
+    </div>
+
+    <h3 style="color: #34495e;">📌 Sample Use Case:</h3>
+    <div style="margin-left: 20px;">
+        <p>User: Logs in → Searches Hyderabad to Delhi → Books 2 seats → Views confirmation in "My Bookings"</p>
+        <p>Admin: Logs in → Adds flight Mumbai to Chennai → Reviews all bookings</p>
+    </div>
+
+    <h3 style="color: #34495e;">📈 Project Outcome:</h3>
+    <p style="margin-left: 20px;">Demonstrated expertise in full-stack Java development, real-time CRUD operations, and dual-role web applications with seamless integration of backend and UI.</p>
+</div>
+        </div>
+    </div>
+
+    <!-- User Management System -->
+<div class="project" style="margin-bottom: 40px;">
+    <h3 style="font-size: 1.8rem; margin-bottom: 10px;">User Management System</h3>
+    <img src="user.jpg" alt="User Management" class="project-image" onclick="toggleDetails('user-details')" style="width: 300px; margin-top: 10px; cursor: pointer;">
+
+    <div id="user-details" style="display: none; background-color: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+        <h3 style="text-align: center; color: #2c3e50;">👥 User Management System</h3>
+        <p style="text-align: center; font-size: 16px; color: #555;">
+            A Java-based web application that enables role-based user management with admin and user panels. Admins can manage users, while users can update their profile and view role-based content.
+        </p>
+
+        <div style="font-size: 15px; color: #333; line-height: 1.8;">
+            <p><strong>🛠️ Tech Stack:</strong> Java, JSP, Servlets, JDBC, MySQL, HTML, CSS</p>
+            <p><strong>💻 Tools:</strong> Eclipse IDE, Apache Tomcat, MySQL Workbench</p>
+            <p><strong>📐 Architecture:</strong> MVC (Model-View-Controller)</p>
+        </div>
+
+        <h4 style="color: #34495e;">👤 User Panel:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>User Registration and Login</p>
+            <p>Update profile details</p>
+            <p>View assigned role and status</p>
+        </div>
+
+        <h4 style="color: #34495e;">🔐 Admin Panel:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>Admin Login for secure access</p>
+            <p>View, Add, Edit, and Delete Users</p>
+            <p>Activate/Deactivate users</p>
+            <p>Assign roles (Admin/User)</p>
+        </div>
+
+        <h4 style="color: #34495e;">🗄️ Database Tables:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p><code>users</code>: id, username, password, email, role, status</p>
+            <p><code>admin</code>: id, username, password</p>
+        </div>
+
+        <h4 style="color: #34495e;">📌 Key Highlights:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>Complete CRUD operations for users</p>
+            <p>Role-based access control and session handling</p>
+            <p>Input validation and clean UI using HTML/CSS</p>
+        </div>
+
+        <h4 style="color: #34495e;">🎯 Outcome:</h4>
+        <p style="margin-left: 20px;">Successfully built and deployed a secure user management portal demonstrating backend logic, session management, and user role workflows.</p>
+    </div>
+</div>
+
+
+    <!-- Online Examination System -->
+    <div class="project" style="margin-bottom: 40px;">
+    <h3 style="font-size: 1.8rem; margin-bottom: 10px;">Online Examination System</h3>
+    <img src="exam.jpg" alt="Quiz Application" class="project-image" onclick="toggleDetails('exam-details')" style="width: 300px; margin-top: 10px; cursor: pointer;">
+
+    <div id="exam-details" style="display: none; background-color: #f9f9f9; padding: 25px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+        <h3 style="text-align: center; color: #2c3e50;">📝 Online Examination System</h3>
+        <p style="text-align: center; font-size: 16px; color: #555;">
+            A full-stack web application developed using Django that enables students to take MCQ-based exams, track performance, and allows teachers/admins to manage courses, questions, and results.
+        </p>
+
+        <div style="font-size: 15px; color: #333; line-height: 1.8;">
+            <p><strong>🛠️ Tech Stack:</strong> Python (Django), HTML, CSS, Bootstrap, SQLite</p>
+            <p><strong>💻 Tools:</strong> VS Code, Git, Browser, Django Admin</p>
+        </div>
+
+        <h4 style="color: #34495e;">🔒 Admin Module:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>Login with superuser credentials</p>
+            <p>Manage teachers, students, courses, and questions</p>
+            <p>Add, view, and delete questions with options and marks</p>
+            <p>Monitor student marks and exam attempts</p>
+        </div>
+
+        <h4 style="color: #34495e;">👨‍🏫 Teacher Module:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>Apply for a teaching role (approval required by admin)</p>
+            <p>Access features to manage courses and questions after approval</p>
+        </div>
+
+        <h4 style="color: #34495e;">👨‍🎓 Student Module:</h4>
+        <div style="margin-left: 20px; line-height: 1.8;">
+            <p>Register and log in without admin approval</p>
+            <p>Attempt unlimited MCQ-based exams</p>
+            <p>View detailed performance and marks history</p>
+        </div>
+
+        <h4 style="color: #34495e;">📬 Email Contact Setup:</h4>
+        <div style="margin-left: 20px;">
+            <p>Edit your <code>settings.py</code> with your email credentials:</p>
+            <pre style="background: #eee; padding: 10px; border-radius: 5px;">
+EMAIL_HOST_USER = 'youremail@gmail.com'
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_RECEIVING_USER = 'youremail@gmail.com'
+            </pre>
+        </div>
+
+        <h4 style="color: #34495e;">⚠️ Known Limitation:</h4>
+        <p style="margin-left: 20px;">Admins define how many questions a course should have, but there’s no restriction on the number of questions teachers/admins can add, which may lead to inconsistencies.</p>
+
+        <h4 style="color: #34495e;">🎯 Outcome:</h4>
+        <p style="margin-left: 20px;">Built a dynamic, multi-role online examination system using Django. This project demonstrates backend development, secure workflow design, and user role management.</p>
+    </div>
+</div>
+
+</section>
+
+
+    <section id="contact" style="max-width: 1600px; width: 95%; margin: auto; padding: 40px 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 style="text-align: center; font-size: 2.5em; margin-bottom: 20px; color: #333;">Contact Me</h2>
+    
+    <form action="https://formspree.io/f/xwpvjkye" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; width: 100%;">
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; width: 100%;">
+        <textarea name="message" placeholder="Your Message" required style="padding: 10px; font-size: 1em; border-radius: 5px; border: 1px solid #ddd; width: 100%; height: 150px;"></textarea>
+        <button type="submit" style="padding: 12px 20px; background-color: #FFA500; color: white; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease;">
+            Send Message
+        </button>
+    </form>
+
+    <!-- Social Media Buttons -->
+    <div style="display: flex; justify-content: center; gap: 15px; margin-top: 40px;">
+        <!-- LinkedIn Button -->
+        <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<a href="https://www.linkedin.com/in/narendra-reddy-517982283/" target="_blank" style="text-decoration: none;">
+    <button style="background-color: #0077b5; color: white; padding: 12px 25px; border-radius: 5px; border: none; cursor: pointer; transition: background-color 0.3s ease; display: flex; align-items: center; gap: 10px;">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+    </button>
+</a>
+        <!-- Gmail Button -->
+      <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<a href="mailto:narendrareddy.danda0569@gmail.com" target="_blank" style="text-decoration: none;">
+    <button style="background-color: #ea4335; color: white; padding: 12px 25px; border-radius: 5px; border: none; cursor: pointer; transition: background-color 0.3s ease; display: flex; align-items: center; gap: 10px;">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Gmail</span>
+    </button>
+</a>
+        <!-- GitHub Button -->
+       <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<a href="https://github.com/Narendra0569" target="_blank" style="text-decoration: none;">
+    <button style="background-color: #333; color: white; padding: 12px 25px; border-radius: 5px; border: none; cursor: pointer; transition: background-color 0.3s ease; display: flex; align-items: center; gap: 10px;">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+    </button>
+</a>
+    </div>
+
+    <!-- Phone Number -->
+    <div style="text-align: center; margin-top: 30px;">
+        <p style="font-size: 1.3em; color: #333;">📞 Call Me: <strong>+91 8309787909</strong></p>
+    </div>
+</section>
+
+    
+    <footer>
+        <p>&copy; 2025 Danda Narendra Reddy. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Function to toggle project details visibility
+        document.querySelectorAll('.project-image').forEach(function(image) {
+            image.addEventListener('click', function() {
+                var projectDetails = image.nextElementSibling;
+                if (projectDetails.style.display === 'none' || projectDetails.style.display === '') {
+                    projectDetails.style.display = 'block';
+                } else {
+                    projectDetails.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
