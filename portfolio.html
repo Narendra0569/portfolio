@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Danda Narendra Reddy</title>
-     <style>
+      <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -50,15 +50,20 @@
             height: auto;
             border-radius: 10px;
         }
+        .table-scroll {
+            overflow-x: auto;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
+            min-width: 600px;
         }
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
             text-align: left;
+            white-space: nowrap;
         }
         th {
             background-color: #f4f4f4;
@@ -116,30 +121,6 @@
                 max-width: 250px;
                 height: auto;
                 margin: 0 auto;
-            }
-
-            table, thead, tbody, th, td, tr {
-                display: block;
-                width: 100%;
-            }
-
-            thead {
-                display: none;
-            }
-
-            td {
-                position: relative;
-                padding-left: 50%;
-                text-align: right;
-            }
-
-            td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 10px;
-                top: 12px;
-                font-weight: bold;
-                text-align: left;
             }
 
             .project img {
